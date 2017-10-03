@@ -20,34 +20,25 @@
 
 {{#each model.inventory as |inventory|}}
 
-<button type="button" class="btn btn-info btn-lg btn-{{inventory.id}}" data-toggle="modal" data-target="#myModal{{inventory.id}}">{{inventory.name}}</button>
-<!-- Modal -->
-<div id="myModal{{inventory.id}}" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content ">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{inventory.name}}</h4>
-      </div>
-      <div class="modal-body">
-        <p>{{inventory.quantity}}</p>
-      </div>
-      <div class="modal-footer">
-
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+<div class='inventory'>
+  <button type="button" class="btn btn-info btn-lg btn-item">
+    <div>
+      <h4>{{inventory.name}}</h4>
     </div>
-
-  </div>
+    <div>
+  <h5>
+    {{inventory.quantity}}
+  </h5>
+    </div>
+  </button>
 </div>
+
 <br>
 
 {{/each}}
 
-<nav class="navbar navbar-fixed-bottom navbar-inverse">
+<footer class="footer">
   <div class="container">
-
+    Inventory Mana
   </div>
-</nav>
+</footer>

@@ -1,8 +1,15 @@
 @import "bootstrap";
 
-.btn {
+.inventory {
+  display: flex;
+  justify-content: center;
+}
+.btn-item {
   margin: 1vh;
-  background-color: black;
+  width: 50vh;
+  height: 15vh;
+  background-color: white;
+  color: black;
 }
 .btn:hover {
   background-color: grey;
@@ -12,4 +19,9 @@
 }
 .nav {
   color: blue;
+}
+footer {
+  background-color: black;
+  height: 5vh;
+
 }
