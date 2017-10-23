@@ -3,9 +3,10 @@
 .inventory {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .btn-item {
-  margin: 1vh;
   width: 50vh;
   height: 15vh;
   background-color: white;

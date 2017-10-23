@@ -18,9 +18,8 @@
   </div>
 </nav>
 
-{{#each model.inventory as |inventory|}}
-
 <div class='inventory'>
+{{#each model.inventory as |inventory|}}
   <button type="button" class="btn btn-info btn-lg btn-item">
     <div>
       <h4>{{inventory.name}}</h4>
@@ -31,11 +30,11 @@
   </h5>
     </div>
   </button>
-</div>
-
+  
 <br>
 
 {{/each}}
+</div>
 
 <footer class="footer">
   <div class="container">
